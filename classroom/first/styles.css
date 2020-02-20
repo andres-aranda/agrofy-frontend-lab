@@ -5,7 +5,8 @@
     background-color: #232732;
 }
 header {
-	background:#2c3e50;
+	background:#df8e34;
+	
 	width:100%;
 	padding:20px;
 
@@ -58,7 +59,8 @@ header .logo a {
     text-shadow: 3px 2px 3px rgba(255,255,255,.2), 2px 2px 2px rgba(206,89,55,0);
     }
 .portada{
-    background-image: image(C:\Users\andre\Documents\GitHub\agrofy-frontend-lab\classroom\first\fondo.png);
+    background-image: url(https://raw.githubusercontent.com/andres-aranda/agrofy-frontend-lab/master/classroom/first/fondo.png);
+    background-size: cover;
     height: 600px; }
 
 
