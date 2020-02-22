@@ -10,12 +10,16 @@
   <body>
     <header>
 
+      <div class="desk">
       <div class="logo">
         <a href="home.html">
           <img src="https://image.flaticon.com/icons/svg/528/528101.svg" width="60" height="60">
         </a>
         <a href="home.html">Poke Pagina</a>
       </div> 
+      </div>
+
+      <div class="desk">
       <nav style="font-weight: bold;">
         <ul>
           <a href="home.html">Home </a>
@@ -26,8 +30,31 @@
           <a>My favs </a>
         </ul>
       </nav>
+    </div>
+
+    <div class="mobilee">  
+      <input class="trigger-input" id="menu" type="checkbox">
+        <div class="trigger-wrapper">
+          <div style="display:flex; flex-direction: column;">
+          <label for="menu" style="display: flex; align-items: center;">
+            <img class="closeed" src="https://image.flaticon.com/icons/svg/528/528101.svg" width="60" height="60" alt="" style="margin: 20px;">
+            <img class="opeen" src="https://i.ya-webdesign.com/images/open-pokeball-png-8.png" width="60" height="60" alt="" style="margin: 20px;">
+            <p style="color:#fff;font-size:30px;">Poke Pagina</p>
+          </label>
+      
+          <ul class="menu-list" style="background-color: white; width: 100%;align-content: center;border-radius: 20px;">
+            <li style="display: flex;" class="menu-list__item"><a href="home.html">Home </a></li>
+            <li class="menu-list__item"><a href="#Videos">Videos</a></li>  
+            <li class="menu-list__item"><a href="#History">History </a>	</li> 
+            <li class="menu-list__item"><a href="#Contact">Contact </a></li>
+            <li class="menu-list__item"><a>Pokedex </a></li>
+            <li class="menu-list__item"><a>My favs </a></li>
+          </ul></div>
+        </div>
+    </div>
     </header>
     <div style="background-color: darkturquoise;">
+      
 
  <section  class="portada">
         <div class="centrar" style="align-items: flex-end;width: 85%;">
@@ -47,17 +74,17 @@
 </div>
    </section>
 
-    <section class="contenedor">
+    <section class="contenedor" style="padding: 30px;">
      
-        <div class="bloque"><h2><p id="History" style="font-weight: bolder;font-size: 200%;color: darkturquoise;;">Pokemon History</p> </h2>
+        <div class="bloque" style="margin: 0px; margin-bottom: 10px;background-color: white;"><h2><p id="History" style="font-weight: bolder; margin: 0px; font-size: 200%;color: darkturquoise;;">Pokemon History</p> </h2>
        
         </div>
           <div class="bloque" style="border-left-style: solid; border-color:blue;">
             <div class="centrar"><img class="logo" width="60";
               height="60" src="https://image.flaticon.com/icons/svg/528/528101.svg">
-              <p style="padding: 4px ; color: blue; font-weight: bolder; font-size: 150%;">1988</p></div>
+              <p style="padding: 4px ; color: blue; font-weight: bolder; font-size: 150%;margin-bottom: 0px;">1988</p></div>
             <div class="centrar">
-              <p style="padding: 10px ;color: blue; font-weight: bolder; font-size: 140% ; margin-bottom: 0px;" padding: 10px ; font-weight: bolder; font-size: 150%;>Firts steps</p>
+              <p style="color: blue; font-weight: bolder; font-size: 140% ; margin-bottom: 0px;" padding: 10px ; font-weight: bolder; font-size: 150%;>Firts steps</p>
               <p>Pokémon is short for “Pocket Monsters", the original Japanese name.  The franchise has its roots in a gaming magazine in the early 1980s  in Japan—Game Freak, started by Satoshi Tajiri and Ken Sugimori.  Tajiri was the writer, while Sugimori was the illustrator.</p>
             </div>
         </div>
@@ -65,26 +92,26 @@
         <div class="bloquee" style="border-right-style: solid ;border-right-color: red;">
 
           <div class="centrar">
-            <p style="padding: 10px ; color: red; font-weight: bolder; font-size: 140% ; margin-bottom: 0px;">Game Boy</p><br>
+            <p style=" color: red; font-weight: bolder; font-size: 140% ; margin-bottom: 0px;">Game Boy</p><br>
             <p>26 February 1996 marks the debut of the Pokémon franchise in the form of both those games on the Game Boy in Japan. At its heart, Pocket Monsters: Red and Green was a very basic Japanese role-playing game.</p>
           </div>
 
           <div class="centrar">
             <img class="logo" width="60";height="60" src="https://image.flaticon.com/icons/svg/2590/2590160.svg" >
-            <p style="padding: 4px ;color: red; font-weight: bolder; font-size: 150%;">1996 </p>
+            <p style="padding: 4px ;color: red; font-weight: bolder;margin-bottom: 0px; font-size: 150%;">1996 </p>
           </div>
           
         </div>
 
         <div class="bloque" style="border-left-style: solid; border-color: yellow;">
 
-          <div class="centrar"><img class="logo" width="60";
+          <div class="centrar" ><img class="logo" width="60";
             height="60" src="https://image.flaticon.com/icons/svg/528/528098.svg">
-            <p style="padding: 4px ;color: yellow; font-weight: bolder; font-size: 150%;">1998</p>
+            <p style="padding: 4px ; padding-bottom: 0px;margin-bottom: 0px; color: yellow; font-weight: bolder; font-size: 150%;">1998</p>
           </div>
 
           <div class="centrar" >
-            <p style="padding: 10px ; color: yellow; font-weight: bolder; font-size: 140% ; margin-bottom: 0px;">Pikachu</p><br>
+            <p style=" color: yellow; font-weight: bolder; font-size: 140% ; margin-bottom: 0px;">Pikachu</p><br>
             <p>The popularity of the anime and Yellow, I believe, led to Pikachu becoming the most recognizable and loved Pokémon out there. Pocket Monsters’ success led to North America getting the games in 1998 for the Game Boy (as Pokémon Red and Blue). These few years in the public saw Pokémon go from a game about a hobby to a worldwide phenomenon</p>
           </div>
 
@@ -108,19 +135,19 @@
         </div>
       </section>
 
-      <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: darkturquoise;"></path></svg></div>
+      <div style="height: 150px; overflow: hidden ;background-color: lightblue;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: darkturquoise;"></path></svg></div>
   </div>
     
     </div>
-<section class="contenedor" style="align-items: center;">
+<section class="contenedor" style="align-items: center; background-color: lightblue;">
   <P id="Contact" style="font-weight: bolder; font-size: 200%; color: darkturquoise;">Contact Us</P>
   <div class="formulari">
 
   
   <form action="">  
-  <input class="entrada" type="text" name="apellidos" size="40" placeholder="Name"><br>
-  <input class="entrada"  type="text" name="apellidos" size="40" placeholder="E-Mail"><br>
-  <input class="entrada"  type="text" name="apellidos" size="40" placeholder="Subject"><br>
+  <input class="entrada" type="text" name="name" size="40" placeholder="Name"><br>
+  <input class="entrada"  type="email" name="email" size="40" placeholder="E-Mail"><br>
+  <input class="entrada"  type="text" name="Subject" size="40" placeholder="Subject"><br>
   <input class="entrada"  style="height: 100px;" type="text" name="apellidos" size="40" placeholder="Messege"><br>
   </form>
 </div>
@@ -128,14 +155,14 @@
   
   
 </section>
-<section class="contenedor" style="margin: 0px;">
+<section class="contenedor" style="margin: 0px;background-color: lightblue;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path fill="#20FFFF" fill-opacity="1" d="M0,160L20,154.7C40,149,80,139,120,149.3C160,160,200,192,240,197.3C280,203,320,181,360,165.3C400,149,440,139,480,160C520,181,560,235,600,224C640,213,680,139,720,106.7C760,75,800,85,840,74.7C880,64,920,32,960,48C1000,64,1040,128,1080,154.7C1120,181,1160,171,1200,160C1240,149,1280,139,1320,149.3C1360,160,1400,192,1420,208L1440,224L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path>
         </svg>
         
 </section>
 <footer style="background-color: #20FFFF ;margin: 0px;display: flex; justify-content: center; ">
-  <p>Made with love for<p style="font-weight: bolder;">: Andyy Aranda</p></p>
+  <p>Made with love by <p style="font-weight: bolder;">. Andyy Aranda</p></p>
 </footer>
   </body>
 
