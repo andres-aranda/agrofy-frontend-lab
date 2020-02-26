@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blo1{
+    background-color: red;
+}
+.blo2 {
+    background-color: blue;
+}
+.blo3{
+    background-color: blueviolet;
+    display: 
+}
+.menu-list {
+    margin: 0;
+    list-style: none;
+    padding: 10px;
+    color: #6B7C93;
+      font-family: Helvetica;
+      font-size: 16px;
+      display: none;
+  }
+  
+  .menu-list__item {
+    margin-left 10px;
+    padding: 5px;
+  }
+  
+  .trigger-input {
+    display: none;
+
+  }
+  
+  .trigger-input:checked + .trigger-wrapper .menu-list {
+      display: block;
+      
+  }
+ 

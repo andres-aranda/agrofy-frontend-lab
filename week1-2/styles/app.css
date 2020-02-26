@@ -50,6 +50,7 @@
     align-items: center;
    border-radius:  20px;
    margin: 20px;
+   background-color: lavender;
 }
 .bloquee{
     display: flex;
@@ -58,13 +59,14 @@
     align-items: center;
    border-radius:  20px;
    margin: 20px;
+   background-color: lavender;
 }
 .centrar {
 
     padding: 20px;
     display: flex;
     flex-direction: column;
-    
+margin: 0px;
     align-items: flex-start;
     border-radius: 20px;
 
@@ -142,9 +144,7 @@ justify-content: center;
     flex-direction: column;
 
 }
-#demotext {
-    text-shadow: 3px 2px 3px rgba(255,255,255,.2), 2px 2px 2px rgba(206,89,55,0);
-    }
+
 .portada{
     background-image: url(https://github.com/andres-aranda/agrofy-frontend-lab/blob/master/week1-2/assets/charmANDER.png?raw=true);
     background-size: 700px;
@@ -166,19 +166,7 @@ justify-content: space-between;
 	flex-wrap:wrap;
 }
 
- @media (max-width: 720px) {
-    .bloque{
-        flex-direction: column;  
-    }
-    .bloquee{
-        flex-direction: column-reverse;
-    }
-    iframe{
-        width: 400px;
-        height: 250px;
-    }
 
-  }
   .myButton {
 	box-shadow: 1px 3px 7px 0px #3dc21b;
 	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
@@ -202,8 +190,65 @@ justify-content: space-between;
 	position:relative;
 	top:1px;
 }
+.opeen{
+    display: none;
+}
+.menu-list {
+    margin: 0;
+    list-style: none;
+    padding: 10px;
+    color: #6B7C93;
+      font-family: Helvetica;
+      font-size: 16px;
+      display: none;
+  }
+  
+  .menu-list__item {
+    margin-left 10px;
+    padding: 5px;
+  }
+  
+  .trigger-input {
+    display: none;
 
+  }
+  
+  .trigger-input:checked + .trigger-wrapper .menu-list {
+      display: block;
+      
+  }
+  .trigger-input:checked + .trigger-wrapper .opeen {
+    display: block;
+    
+}
+.trigger-input:checked + .trigger-wrapper .closeed {
+    display: none;
+    
+}
+  .mobilee{display: none;
+  }
+  .desk{
+      display: block;
+  }
 
   
+  @media (max-width: 720px) {
+    .bloque{
+        flex-direction: column;  
+    }
+    .bloquee{
+        flex-direction: column-reverse;
+    }
+    iframe{
+        width: 400px;
+        height: 250px;
+    }
+    .mobilee{
+        display: block;
+    }
+    .desk{
+        display: none;
+    }
 
+  }
      
