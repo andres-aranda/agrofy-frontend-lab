@@ -1,8 +1,155 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap') ;
 
+header {
+	background: darkturquoise;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+header nav a {
+	
 
-  .entrada {
+	color:#fff;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px;;
+
+
+}
+header .logo {
+	color:#fff;
+	font-size:30px;
+}
+
+header .logo img {
+	width:50px;
+	vertical-align: top;
+}
+
+header .logo a {
+	color:#fff;
+	text-decoration: none;
+    line-height:50px;
+}
+.mobilee{display: none;
+    width: 700px;
+  }
+  .desk{
+      display: flex;
+      margin: 20px;
+  }
+
+  .menu-list {
+    margin: 0;
+    list-style: none;
+   padding: 0px;
+    color: #6B7C93;
+    font-size: 16px;
+    display: none;
+    
+    width: 100%;
+    align-content: center;
+  }
+  
+  .menu-list__item {
+    background-color: whitesmoke;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-color: lightgray;
+    border-bottom: 1px solid;
+    
+  }
+  .menu-list__item a {text-decoration: none;}
+  
+  .trigger-input {
+    display: none;
+
+ }
+  
+  .trigger-input:checked + .trigger-wrapper .menu-list {
+      display: block;
+      
+}
+  .trigger-input:checked + .trigger-wrapper .opeen {
+    display: block;
+    
+}
+.trigger-input:checked + .trigger-wrapper .closeed {
+    display: none;
+    
+}
+
+.portada{
+    background-image: url(https://github.com/andres-aranda/agrofy-frontend-lab/blob/master/week1-2/assets/charmANDER.png?raw=true);
+    background-size: 700px;
+    background-repeat: no-repeat;
+    height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.contenedor {
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.bloque{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   border-radius:  20px;
+   margin: 20px;
+   background-color: lavender;
+}
+
+.bloque_video{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   margin: 20px;
+   border-radius:  0px ;
+    margin: 0px; 
+    justify-content: space-around; 
+    background-color: darkturquoise;
+}
+.centrar {
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    align-items: flex-start;
+    border-radius: 20px;
+
+}
+button.btn {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-color: #01e409;
+    padding:16px 62px;
+    color: #fff;
+    border-radius: 50px;
+  }
+  button.btn:hover {
+    opacity: 0.8;
+    
+  }
+
+.entrada {
     display: inline-block;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -42,197 +189,20 @@
     -webkit-box-shadow: 3px 3px 18px 3px rgba(7,160,4,0.5) ;
     box-shadow: 3px 3px 18px 3px rgba(7,160,4,0.5) ;
   }
-
-  .bloque{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   border-radius:  20px;
-   margin: 20px;
-   background-color: lavender;
-}
-.bloquee{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   border-radius:  20px;
-   margin: 20px;
-   background-color: lavender;
-}
-.centrar {
-
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-margin: 0px;
-    align-items: flex-start;
-    border-radius: 20px;
-
-}
-.centrarr {
-
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    background-image: url(https://image.freepik.com/vector-gratis/fondo-poligonal-transparente-colorido-abstracto_1055-5149.jpg);
-    align-items: flex-start;
-    border-radius: 20px;
-
-}
-
-body {
+  body {
     font-family: Ubuntu;
     margin: 0;
     font-weight: bold;
 }
-
-
-
-.tags {
-    font-family: 'Ubuntu', sans-serif;
-    padding: 10px 50px;
-    color: white;
-    background-color: #232732;
-}
-header {
-	background: darkturquoise;;
-	
-	/* width:100%;*/
-	padding:20px;
-	display: flex;
-	justify-content:space-between;
-	align-items:center;
-
-	flex-direction:row;
-	flex-wrap:wrap;
-}
-header nav a {
-	
-
-	color:#fff;
-	text-align: center;
-	text-decoration: none;
-	
-	margin: 5px;;
-
-	/* Flexbox */
-	flex-grow:1;
-}
-header .logo {
-	color:#fff;
-	font-size:30px;
-}
-
-header .logo img {
-	width:50px;
-	vertical-align: top;
-}
-
-header .logo a {
-	color:#fff;
-	text-decoration: none;
-    line-height:50px;
-}
-.contenedor {
-
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-justify-content: center;
-    flex-direction: column;
-
-}
-
-.portada{
-    background-image: url(https://github.com/andres-aranda/agrofy-frontend-lab/blob/master/week1-2/assets/charmANDER.png?raw=true);
-    background-size: 700px;
-    background-repeat: no-repeat;
-    height: 500px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-.burbuja {
-    color:#fff; 
-	width:100%;
-	padding:20px;
-
-	/* Flexbox */
-	display: flex;
-
-	flex-direction:row;
-	flex-wrap:wrap;
-}
-
-
-  .myButton {
-	box-shadow: 1px 3px 7px 0px #3dc21b;
-	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-	background-color:#44c767;
-	border-radius:28px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:19px;
-	padding:16px 62px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-	background-color:#5cbf2a;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-.opeen{
-    display: none;
-}
-.menu-list {
-    margin: 0;
-    list-style: none;
-    padding: 10px;
-    color: #6B7C93;
-      font-family: Helvetica;
-      font-size: 16px;
-      display: none;
+.headerMoving {
+    position: fixed;
+    top: 0;
+    width: 100%
   }
   
-  .menu-list__item {
-    margin-left 10px;
-    padding: 5px;
-  }
   
-  .trigger-input {
-    display: none;
 
-  }
-  
-  .trigger-input:checked + .trigger-wrapper .menu-list {
-      display: block;
-      
-  }
-  .trigger-input:checked + .trigger-wrapper .opeen {
-    display: block;
-    
-}
-.trigger-input:checked + .trigger-wrapper .closeed {
-    display: none;
-    
-}
-  .mobilee{display: none;
-  }
-  .desk{
-      display: block;
-  }
-
-  
-  @media (max-width: 720px) {
+ @media (max-width: 720px) {
     .bloque{
         flex-direction: column;  
     }
@@ -244,7 +214,7 @@ justify-content: space-between;
         height: 250px;
     }
     .mobilee{
-        display: block;
+        display: flex;
     }
     .desk{
         display: none;
