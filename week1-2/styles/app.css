@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap') ;
 
-header {
+.headerr {
 	background: darkturquoise;
 	display: flex;
 	justify-content:space-between;
 	align-items:center;
 	flex-direction:row;
-	flex-wrap:wrap;
+  flex-wrap:wrap;
+  width: 100%;
+  position: fixed;
 }
-header nav a {
-	
-
+.headerr nav a {
 	color:#fff;
 	text-align: center;
 	text-decoration: none;
@@ -19,21 +19,57 @@ header nav a {
 
 
 }
-header .logo {
+.headerr .logo {
 	color:#fff;
 	font-size:30px;
 }
 
-header .logo img {
+.headerr .logo img {
 	width:50px;
 	vertical-align: top;
 }
 
-header .logo a {
+.headerr .logo a {
 	color:#fff;
 	text-decoration: none;
     line-height:50px;
 }
+
+.movinn {
+	background: white;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:row;
+  flex-wrap:wrap;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid;
+  border-color: gray;
+}
+.movinn nav a {
+	color:black;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px;;
+}
+.movinn .logo {
+	color:black;
+	font-size:30px;
+}
+
+.movinn .logo img {
+	width:50px;
+	vertical-align: top;
+}
+
+.movinn .logo a {
+	color:black;
+	text-decoration: none;
+    line-height:50px;
+}
+
+
 .mobilee{display: none;
     width: 700px;
   }
@@ -81,15 +117,22 @@ header .logo a {
     display: none;
     
 }
-
+.opeen{
+  display: none;
+}
+.closeed{
+  display: block;
+}
 .portada{
     background-image: url(https://github.com/andres-aranda/agrofy-frontend-lab/blob/master/week1-2/assets/charmANDER.png?raw=true);
-    background-size: 700px;
+    background-size: 600px;
     background-repeat: no-repeat;
     height: 500px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+padding-top: 90px;
+background-position-y: -130%;
 }
 
 .contenedor {
@@ -194,12 +237,7 @@ button.btn {
     margin: 0;
     font-weight: bold;
 }
-.headerMoving {
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
-  
+
   
 
  @media (max-width: 720px) {
