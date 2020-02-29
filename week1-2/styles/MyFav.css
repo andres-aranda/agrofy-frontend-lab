@@ -35,7 +35,7 @@
 
 
 .mobilee{display: none;
-    width: 700px;
+    width: 100%;
   }
   .desk{
       display: flex;
@@ -87,18 +87,7 @@
 .closeed{
   display: block;
 }
-.encabezado{
-  display: flex; 
-  justify-content: center;
-}
-.encabezado img{
-  width: 20%;
-  height: 20%;
-}
-.encabezado p{
-  margin-left: 10px ;
-  font-size: 350%;
-}
+
   body {
     font-family: Ubuntu;
     margin: 0;
@@ -129,35 +118,6 @@ button.btn:hover {
   opacity: 0.8;
   
 }
-
-#pokemonData {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.pokemonInfoBody img {
-  border-radius: 50%;
-  height: 50px;
-  padding: 20px;
-  margin: 20px;
-  width: 50px;
-  background-color: teal;
-}
-.pokemonInfo {
-  margin-right: 30px;
-  border-radius: 20px;
-  border: 0.5px solid;
-  border-color: lightslategray;
-  padding: 10px;
-  background-color: #FAFAFA;
-}
-.pokemonInfoBody {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 
  @media (max-width: 720px) {
    
