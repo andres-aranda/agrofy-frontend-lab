@@ -129,7 +129,20 @@ button.btn:hover {
   opacity: 0.8;
   
 }
-
+button.added {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  background-color: blue;
+  padding:16px 62px;
+  color: #fff;
+  border-radius: 50px;
+}
+button.added:hover {
+  opacity: 0.8;
+}
 #pokemonData {
   display: flex;
   flex-wrap: wrap;
@@ -137,10 +150,9 @@ button.btn:hover {
 
 .pokemonInfoBody img {
   border-radius: 50%;
-  height: 50px;
-  padding: 20px;
+  
   margin: 20px;
-  width: 50px;
+
   background-color: teal;
 }
 .pokemonInfo {

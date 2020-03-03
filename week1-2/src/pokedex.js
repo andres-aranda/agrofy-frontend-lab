@@ -1,77 +1,69 @@
 let pokemones = [];
-let fav = [];
+let fav = localStorage.getItem("fav").split(",") || [];
+
+
+
 //carga api
 const carga = () => {
-  let pokemon;
-  for (let i = 1; i < 5; i++) {
-    let i = 1;
-    let ficha = [];
-    let url = 'https://pokeapi.co/api/v2/pokemon/' + i;
-    fetch(url)
-      .then((rta) => rta.json())
-      .then(myJson => {
-        ficha.push(myJson.id, myJson.sprites.back_default, myJson.name, myJson.types, false);
-        pokemones.push(ficha);
-      })
-      .then(actualiza())
-      .then(showPokemones(pokemones))
-      .catch(err => console.log('No funca ' + err));
+  let promises = [];
+  for (let i = 1; i <= 150; i++) {
+    const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
+    promises.push(fetch(url).then(res => res.json()));
   }
-}
-//add favorite
-const addfav = (favId) => {
+  Promise.all(promises).then(myJson => {
+    pokemones = myJson.map(myJson => ({
+      id: myJson.id,
+      image: myJson.sprites.front_default,
+      name: myJson.name,
+      types: myJson.types,
+      flag: fav && fav.length && fav.find(item=>item == myJson.id)
+      }
+    ));
 
+    // actualiza();
+    showPokemones(pokemones);
+  }).catch(err => console.log('No funca ' + err));
+};
+//add favorite
+const a = (favId) => {
+  console.log(favId.textContent);
   if (favId.textContent == 'Add to fav') {
     favId.textContent = 'Remove';
     favId.className = 'added';
-    fav.push = (favId.id);
+    fav.push(favId.id);
+    guardar();
   } else {
-  favId.textContent = 'Add to fav';
+    favId.textContent = 'Add to fav';
     favId.className = 'btn';
-    let m = fav.indexOf(favId.id);
-    if (m !== -1) {
-      arr.splice(m, 1);
-    }
+    fav = fav.filter(id=>id != favId.id) ;
+    guardar();
   }
 };
 
+//mostrar poquemones  
 
-//actualiza estado
-const actualiza = () => {
-  for (let i = 0; i < 151; i++) {
-    for (let j = 0; i < fav.length + 1; j++) {
-      if (pokemones[i][0] == fav[j]) {
-        pokemones[true]
-      }
-    }
-  }
-}
-
-
-const statusFav = (idPoke) => {
-
-}
-//mostrar poquemones    
 const showPokemones = (mostrar) => {
+  limpiar();
   mostrar.map(pokemon => createDiv(pokemon));
 }
 //Crea el div   
 const createDiv = poke => {
   let types = "Types: ";
   const tipos = () => {
-    for (let i = 0; i < poke[3].length; i++) {
-      types += poke[3][i] + " ";
+    for (let i = 0; i < poke.types.length; i++) {
+      types += poke.types[i].type.name + " ";
     }
   };
+  tipos();
   const div = document.createElement('div');
   div.className = 'pokemonInfo';
-  if (poke[4]) {
+  if (poke.flag) {
     div.innerHTML = `
           <div class="pokemonInfoBody">
-            <img src=${poke[1]}>
-            <p>${poke[2]}</p>
+            <img src=${poke.image}>
+            <p>${poke.name}</p>
             <p>${types}</p>
-            <button class="added" id="${poke[0]}">
+            <button class="added" id="${poke.id}" onclick="a(this)">
               Remove
             </buton>
           </div>
@@ -79,35 +71,42 @@ const createDiv = poke => {
   } else {
     div.innerHTML = `
           <div class="pokemonInfoBody">
-            <img src=${poke[1]}>
-            <p>${poke[2]}</p>
+            <img src=${poke.image}>
+            <p>${poke.name}</p>
             <p>${types}</p>
-            <button class="Add to fav" id="${poke[0]}">
-              Remove
+            <button class="btn" id="${poke.id}" onclick="a(this)">
+            Add to fav
             </buton>
           </div>
         `;
   }
-
   return document.getElementById('pokemonData').appendChild(div);
 };
+limpiar = () => {
+  document.getElementById('pokemonData').innerHTML = "";
+}
 //buscar poquemones
 buscar = (pal) => {
-  let largo;
-  let coincide = [];
-  largo = pal.length;
-  for (let i = 0; i < 150;) {
-    if (pokemones[i][2].substr(0, largo) == pal) {
-      coincide.push(pokemones[i])
-    }
-  } return coincide;
+  let coincide;
+  if (pal.length) {
+    coincide = pokemones.filter(poke => poke.name.includes(pal))
+    return coincide;
+  } else { return pokemones; }
+
 }
-//limpiar pantalla
-limpiar = () => { document.getElementById('pokemonData').removeChild(div); }
+//guardar
+const guardar = () =>{
+  localStorage.setItem("fav",fav);
+}
+
+// buscar en array pokemon
+
 
 ingresobusqueda = () => {
-  let p = document.getElementById('buscar').value;
-  limpiar();
-  showPokemones(buscar(p));
+  let palabra = document.getElementById('buscar').value;
+  showPokemones(buscar(palabra));
+}
+const test = (a) => {
+  console.log(a.textContent);
 }
 carga();
