@@ -154,6 +154,8 @@ background-position-y: -130%;
    border-radius:  20px;
    margin: 20px;
    background-color: lavender;
+   -webkit-box-shadow: 6px 6px 31px 0 rgba(91,91,91,0.91) ;
+  box-shadow: 6px 6px 31px 0 rgba(91,91,91,0.91)
 }
 
 .bloque_video{

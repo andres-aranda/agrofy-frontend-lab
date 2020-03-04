@@ -35,7 +35,20 @@
     line-height:50px;
 }
 
-
+.portada{
+ 
+  display: flex;
+  justify-content: space-around;
+  padding-top: 92px;
+   background-image: url(https://github.com/andres-aranda/agrofy-frontend-lab/blob/master/week1-2/assets/Wave-10s-1366px.png?raw=true);
+   background-size: cover;
+   background-position-y: bottom;
+   height: 300px;
+  }
+  .portada p {
+    font-size: 400%;
+    padding-top: 50px;
+  }
 .mobilee{display: none;
     width: 700px;
   }
@@ -90,32 +103,14 @@
 .closeed{
   display: block;
 }
-.encabezado{
-  display: flex; 
-  justify-content: center;
-}
-.encabezado img{
-  width: 20%;
-  height: 20%;
-}
-.encabezado p{
-  margin-left: 10px ;
-  font-size: 350%;
-}
+
   body {
     font-family: Ubuntu;
     margin: 0;
     font-weight: bold;
 }
 
-.buscador{
-  width: 40%;
-  border: 1px solid;
-  border-color: lightgray;
-  border-radius: 50px;
-  padding: 15px;
-  font-size: 130%;
-}
+
   
 button.btn {
   font-size: 20px;
@@ -149,6 +144,7 @@ button.added:hover {
 #pokemonData {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pokemonInfoBody img {
@@ -159,12 +155,14 @@ button.added:hover {
   background-color: teal;
 }
 .pokemonInfo {
-  margin-right: 30px;
+  margin: 30px;
   border-radius: 20px;
   border: 0.5px solid;
   border-color: lightslategray;
   padding: 10px;
   background-color: #FAFAFA;
+  -webkit-box-shadow: 6px 6px 31px 0 rgba(91,91,91,0.91) ;
+  box-shadow: 6px 6px 31px 0 rgba(91,91,91,0.91)
 }
 .pokemonInfoBody {
   display: flex;

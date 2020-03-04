@@ -149,6 +149,7 @@ button.added:hover {
 #pokemonData {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pokemonInfoBody img {
@@ -159,12 +160,14 @@ button.added:hover {
   background-color: teal;
 }
 .pokemonInfo {
-  margin-right: 30px;
+  margin: 30px;
   border-radius: 20px;
   border: 0.5px solid;
   border-color: lightslategray;
   padding: 10px;
   background-color: #FAFAFA;
+  -webkit-box-shadow: 6px 6px 31px 0 rgba(91,91,91,0.91) ;
+  box-shadow: 6px 6px 31px 0 rgba(91,91,91,0.91)
 }
 .pokemonInfoBody {
   display: flex;
