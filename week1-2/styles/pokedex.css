@@ -8,8 +8,10 @@
 	align-items:center;
 	flex-direction:row;
   flex-wrap:wrap;
+  position: fixed;
   width: 100%;
-
+  border-bottom: 1px solid;
+  border-color: gray;
 }
 .movinn nav a {
 	color:black;
@@ -32,7 +34,6 @@
 	text-decoration: none;
     line-height:50px;
 }
-
 
 .mobilee{display: none;
     width: 700px;
@@ -58,11 +59,13 @@
     background-color: whitesmoke;
     padding: 5px;
     border-bottom-left-radius: 5px;
-    border-color: lightgray;
+    border-color: black;
     border-bottom: 1px solid;
+    color: black;
     
   }
-  .menu-list__item a {text-decoration: none;}
+  .menu-list__item a {text-decoration: none;
+  color: black;}
   
   .trigger-input {
     display: none;
@@ -171,14 +174,28 @@ button.added:hover {
 }
 
 
- @media (max-width: 720px) {
+@media (max-width: 720px) {
    
-    .mobilee{
-        display: flex;
-    }
-    .desk{
-        display: none;
-    }
-
+  .mobilee{
+      display: flex;
   }
+  .desk{
+      display: none;
+  }
+  #pokemonData {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.pokemonInfoBody{
+margin: 20px;
+padding: 20px;
+}
+.pokemonInfo{
+margin: 20px;
+margin-left: 150px;
+margin-right: 150px;
+}
+}
      

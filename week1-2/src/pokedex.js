@@ -1,5 +1,5 @@
 let pokemones = [];
-let fav = localStorage.getItem("fav").split(",") || [];
+let fav =   localStorage.getItem("fav") && localStorage.getItem("fav").split(",") || [];
 
 
 
