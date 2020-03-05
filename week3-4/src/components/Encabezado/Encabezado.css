@@ -1,0 +1,14 @@
+.encabezado{
+    display: flex; 
+    justify-content: center;
+  }
+  .encabezado img{
+    width: 20%;
+    height: 20%;
+  }
+  .encabezado p{
+    margin-left: 1px;
+    font-size: 350%;
+    margin-bottom: auto;
+    margin-top: auto;
+  }

@@ -1,0 +1,4 @@
+.pokedexPage{
+display: flex;
+flex-direction: column;
+}

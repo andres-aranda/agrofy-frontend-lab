@@ -18,10 +18,12 @@ const carga = () => {
       types: myJson.types,
       flag: fav && fav.length && fav.find(item=>item == myJson.id)
       }
+     
     ));
-
-    // actualiza();
-    showPokemones(pokemones);
+   showPokemones(pokemones);
+   
+   let prueba = JSON.parse(localStorage.getItem("pokemones"));
+   
   }).catch(err => console.log('No funca ' + err));
 };
 //add favorite

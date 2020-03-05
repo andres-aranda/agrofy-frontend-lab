@@ -1,0 +1,27 @@
+button.btn {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-color: #01e409;
+    padding:16px 62px;
+    color: #fff;
+    border-radius: 50px;
+    margin-left: 20px;
+  }
+  button.btn:hover {
+    opacity: 0.8;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+  }
+  .buscador{
+    width: 40%;
+    border: 1px solid;
+    border-color: lightgray;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 130%;
+  }

@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
     justify-content: space-between;
     padding: 10px;
@@ -18,8 +18,11 @@
 .header__logo__image {
     width: 50px;
     padding-right: 10px;
+    
 }
-
+.header__menu__desktop{
+    margin-right: 40px;
+}
 .header__menu__desktop > ul {
     list-style: none;
     display: flex;
@@ -35,6 +38,7 @@
 
 .header__menu__mobile {
     display: none;
+    margin-right: 10px;
 }
 
 button.header__menu__mobile__icon {
