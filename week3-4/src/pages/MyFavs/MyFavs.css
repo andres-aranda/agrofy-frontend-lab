@@ -5,7 +5,8 @@
  
     display: flex;
     justify-content: space-around;
-    padding-top: 92px;
+   padding: 0px;
+   margin: 0px;
      background-image: url(https://github.com/andres-aranda/agrofy-frontend-lab/blob/master/week1-2/assets/Wave-10s-1366px.png?raw=true);
      background-size: cover;
      background-position-y: bottom;

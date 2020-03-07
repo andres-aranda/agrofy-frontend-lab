@@ -9,7 +9,7 @@ let fav =   localStorage.getItem("fav") && localStorage.getItem("fav").split(","
 //Carga global
 const carga = () => {
     let promises = [];
-    for (let i = 1; i <= 150; i++) {
+    for (let i = 1; i <= 15; i++) {
         const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
         promises.push(fetch(url).then(res => res.json()));
     }
@@ -22,13 +22,13 @@ const carga = () => {
             flag: fav && fav.length && fav.find(item => item == myJson.id)
         }
         ));
-        localStorage.setItem("pokemones",JSON.stringify(pokemones));
+        ReactDOM.render(<App pokemones={pokemones }/>, document.getElementById('root'));
     }).catch(err => console.log('No funca ' + err));
 };
 
+carga();
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

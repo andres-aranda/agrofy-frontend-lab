@@ -25,3 +25,8 @@ button.btn {
     padding: 15px;
     font-size: 130%;
   }
+  .alineacion {
+    display: flex; 
+    justify-content: center;
+    
+  }

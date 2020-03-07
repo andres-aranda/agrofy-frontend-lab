@@ -5,7 +5,9 @@
     justify-content: space-between;
     padding: 10px;
 }
-
+.header a{
+    color: black;
+}
 .header h2 {
     margin: 0;
 }

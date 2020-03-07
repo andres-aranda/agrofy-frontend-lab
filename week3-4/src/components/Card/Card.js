@@ -4,15 +4,16 @@ import FavStatus from '../FavStatus/FavStatus';
 import Types from'../Types/Types';
 
 const Card = props => {
-  let j;
-  j=
-    <div class="pokemonInfoBody">
-    <img src={props.image}/>
-    <p>{props.name}</p>
-    <p><Types types={props.types}/></p>
-    <FavStatus flag={props.flag} id={props.id}/>
-  </div> ;
-  return{j}
+  
+  return(
+    <div className="pokemonInfo">
+  <div className="pokemonInfoBody">
+    <img src={props.pokemon.image}/>
+    <p>{props.pokemon.name}</p>
+    <Types types={props.pokemon.types}/>
+    <FavStatus flag={props.pokemon.flag} id={props.pokemon.id}/>
+  </div>
+   </div>)
 };
 
  

@@ -11,7 +11,7 @@
   height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-top: 90px;
+  justify-content: space-center;
+  align-items: center;
   background-position-y: -130%;
 }

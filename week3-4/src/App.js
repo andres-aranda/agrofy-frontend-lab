@@ -8,15 +8,16 @@ const Home = lazy(() => import('./pages/Home/Home'));
 const Pokedex = lazy(() => import('./pages/Pokedex/Pokedex'));
 
 
-const App = () => {
+const App = (props) => {
+  let pokemones= props.pokemones;
   return (<React.Fragment>
     <Router>
       <Header />
       <Suspense fallback={<div>Loading...</div>}>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/pokedex" component={Pokedex} pokes={[3, 2]} />
-          <Route exact path="/mifavs" component={Myfavs} />
+          <Route exact path="/" render={(props) => <Home {...props} pokemones={pokemones} />}/>
+          <Route exact path="/pokedex" render={(props) => <Pokedex {...props} pokemones={pokemones} />} />
+          <Route exact path="/mifavs" render={(props) => <Myfavs {...props} pokemones={pokemones} />} />
         </Switch>
       </Suspense>
     </Router>

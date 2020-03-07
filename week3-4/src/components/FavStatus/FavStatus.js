@@ -3,10 +3,12 @@ import './FavStatus.css'
 
 const FavStatus = props => {
     let button;
+    let id = props.id;
 props.flag ?
-button = <button class="added" id="{props.id}" onclick="a(this.id)">Remove</button>:
-button = <button class="btn" id="{props.id}" onclick="a(this.id)">Add to fav</button>;
-return {button}
+button = <button class="added" id={id} >Remove</button>:
+button = <button class="btn" id={id} >Add to fav</button>;
+
+return  <div>{button}</div>
 }
 
 

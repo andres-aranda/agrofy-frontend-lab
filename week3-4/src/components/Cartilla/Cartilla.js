@@ -5,15 +5,17 @@ import Card from '../Card/Card'
 
 
 const Cartilla = props => {
-let allPokemons='';
-for (let i=0; i > 151;i++)
-{
-    allPokemons += <Card pokes={props.pokes[i]} />;
-}
+    let pokemones= props.pokemones;
+    let allsCards = [];
+    pokemones.forEach(element => {
+        allsCards.push(<Card pokemon={element}/>);
+    });
+    
+
     return (
         <section>
             <div id="pokemonData">
-                {allPokemons}
+            {allsCards}
             </div>
         </section>
     );

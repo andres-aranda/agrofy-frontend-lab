@@ -4,6 +4,11 @@ import Encabezado from '../../components/Encabezado/Encabezado';
 import Cartilla from '../../components/Cartilla/Cartilla';
 
 const Pokedex = props => {
-   return
- }
+      
+  return (<div className="contenedor">
+    <Encabezado />
+    <Cartilla pokemones={props.pokemones} />
+  </div>)
+}
+
 export default Pokedex;

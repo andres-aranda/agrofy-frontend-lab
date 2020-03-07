@@ -6,7 +6,7 @@ let pokemones = JSON.parse(localStorage.getItem("pokemones"));
 
 const Buscador =()=>{
     return (
-        <div >
+        <div className="alineacion">
       <input className="buscador" type="text" name="buscar" id="buscar" />
       <button className="btn" type="button" onclick="ingresobusqueda()">Search</button>
         </div>
