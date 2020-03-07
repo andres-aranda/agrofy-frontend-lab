@@ -1,0 +1,37 @@
+.contenedor{
+    align-self: flex-end;
+    margin-right: 100px;
+    margin-top: 70px;
+}
+.bloque{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: white;
+    margin: 0px;
+    font-size: 300%;
+}
+p{
+    font-weight: lighter;
+}
+button.btn {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-color: #01e409;
+    padding:16px 62px;
+    color: #fff;
+    border-radius: 50px;
+  }
+  button.btn:hover {
+    opacity: 0.8;
+    
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }

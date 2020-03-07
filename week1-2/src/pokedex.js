@@ -67,7 +67,7 @@ const createDiv = poke => {
             <p>${types}</p>
             <button class="added" id="${poke.id}" onclick="a(this)">
               Remove
-            </buton>
+            </button>
           </div>
         `;
   } else {

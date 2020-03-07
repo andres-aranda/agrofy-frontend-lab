@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap') ;
+
+.portada{
+ 
+    display: flex;
+    justify-content: space-around;
+    padding-top: 92px;
+     background-image: url(https://github.com/andres-aranda/agrofy-frontend-lab/blob/master/week1-2/assets/Wave-10s-1366px.png?raw=true);
+     background-size: cover;
+     background-position-y: bottom;
+     height: 300px;
+     width: 100%;
+    }
+    .portada p {
+      font-size: 400%;
+      padding-top: 50px;
+      font-family: Ubuntu;
+      font-weight: bold;
+  }

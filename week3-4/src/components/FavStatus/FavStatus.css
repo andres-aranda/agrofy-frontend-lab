@@ -1,0 +1,30 @@
+  
+button.btn {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-color: #01e409;
+    padding:16px 62px;
+    color: #fff;
+    border-radius: 50px;
+  }
+  button.btn:hover {
+    opacity: 0.8;
+    
+  }
+  button.added {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-color: blue;
+    padding:16px 62px;
+    color: #fff;
+    border-radius: 50px;
+  }
+  button.added:hover {
+    opacity: 0.8;
+  }

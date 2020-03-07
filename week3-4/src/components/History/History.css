@@ -1,0 +1,16 @@
+
+.contenedor {
+    padding: 30px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+h2 {
+    font-weight: bolder; 
+    margin: 0px; 
+    font-size: 350%;
+    color: darkturquoise;
+}

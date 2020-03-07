@@ -1,0 +1,17 @@
+.ola{
+  height: 150px; overflow: hidden;
+}
+.contenedorr{
+  background-color: darkturquoise;
+}
+.portada{
+  background-image: url(https://github.com/andres-aranda/agrofy-frontend-lab/blob/master/week1-2/assets/charmANDER.png?raw=true);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 90px;
+  background-position-y: -130%;
+}
