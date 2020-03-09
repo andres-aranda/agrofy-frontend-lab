@@ -4,7 +4,7 @@ import './styles/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 let pokemones = [];
-let fav =   localStorage.getItem("fav") && localStorage.getItem("fav").split(",") || [];
+let fav = localStorage.getItem("fav") && localStorage.getItem("fav").split(",") || [];
 
 //Carga global
 const carga = () => {
@@ -22,11 +22,13 @@ const carga = () => {
             flag: fav && fav.length && fav.find(item => item == myJson.id)
         }
         ));
-        ReactDOM.render(<App pokemones={pokemones }/>, document.getElementById('root'));
+        render();
     }).catch(err => console.log('No funca ' + err));
 };
+const render = () => { ReactDOM.render(<App pokemones={pokemones} fav={fav} />, document.getElementById('root')); };
 
 carga();
+
 
 
 
