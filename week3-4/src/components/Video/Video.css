@@ -1,0 +1,40 @@
+.bloque_video{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   margin: 20px;
+   border-radius:  0px ;
+    margin: 0px; 
+    justify-content: space-around; 
+    background-color: darkturquoise;
+}
+.centrarVideo {
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    align-items: flex-start;
+    border-radius: 20px;
+
+}
+.textVideo{
+    align-content: center; 
+    text-align: center;
+    font-weight: bolder;
+    color: white; 
+    padding: 5px; 
+    margin-bottom: 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 720px) {
+    iframe{
+        width: 400px;
+        height: 250px;
+    }
+
+  }

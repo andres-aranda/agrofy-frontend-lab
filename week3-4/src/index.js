@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 let pokemones = [];
 let fav = localStorage.getItem("fav") && localStorage.getItem("fav").split(",") || [];
-
+localStorage.setItem('fav',fav);
 //Carga global
 const carga = () => {
     let promises = [];

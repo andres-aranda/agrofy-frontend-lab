@@ -4,15 +4,17 @@ import Encabezado from '../../components/Encabezado/Encabezado';
 import Cartilla from '../../components/Cartilla/Cartilla';
 
 const Pokedex = props => {
-  let coincide;
-   const[text,setText] = useState(''); 
- text.length?
- coincide = props.pokemones.filter(poke => poke.name.includes(text))
- :coincide = props.pokemones;
+  let contextType = PokemonesContext;
+const [coincide,setCoincide]= useState(contextType);
+const filter =(text)=>{
+text.length?
+setCoincide (contextType.filter(poke => poke.name.includes(text)))
+:setCoincide (contextType);}
   return (<div className="contenedor">
-    <Encabezado text={text}/>
+    <Encabezado onSearch={filter}/>
     <Cartilla pokemones={coincide} />
   </div>)
 }
+
 
 export default Pokedex;

@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import './GameBoy.css';
 
-const GameBoy=()=>{
-   //return
-    <div className="bloque">
+const GameBoy=()=>
+    (<div className="bloque">
       <div class="centrar"> 
       <div class="centrar">
         <p className="steps">Firts steps</p>
@@ -14,7 +13,7 @@ const GameBoy=()=>{
         <p className="Fecha">1988</p>
       </div>    
     
-    </div>
-}
+    </div>)
+
 
 export default GameBoy;

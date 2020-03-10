@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import './Welcome.css'
 
 const Welcome = () => {
-  return (<div className="contenedor">
-        <div className="bloque">
-          <h1>Welcome Page!</h1>
-          <p>Join our comunity to find Pokemon's news.</p>
+  return (<div className="contenedorWelcome">
+        <div className="bloqueWelcom">
+          <h1 className="titulo">Welcome Page!</h1>
+          <p className="description">Join our comunity to find Pokemon's news.</p>
           <div>
           <button type="button" className="btn">See more</button>
           </div>

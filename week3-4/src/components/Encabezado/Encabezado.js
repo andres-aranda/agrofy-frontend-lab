@@ -10,7 +10,7 @@ const Encabezado =(props)=>{
                 <img src="https://github.com/andres-aranda/agrofy-frontend-lab/blob/master/week1-2/assets/ash.png?raw=true" />
                 <p>Pokedex</p>
             </div>
-            <Buscador />
+            <Buscador onSearch={props.onSearch}/>
         </section>
 );
 }

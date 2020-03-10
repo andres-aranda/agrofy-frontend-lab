@@ -10,6 +10,7 @@
 }
 .header h2 {
     margin: 0;
+    color: black;
 }
 
 .header__logo a {
@@ -18,7 +19,7 @@
 }
 
 .header__logo__image {
-    width: 50px;
+    width: 60px;
     padding-right: 10px;
     
 }
