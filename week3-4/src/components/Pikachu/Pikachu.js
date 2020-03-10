@@ -4,7 +4,7 @@ import './Pikachu.css';
 const Picachu = () => 
     (<div className="bloque">
       <div className="centrar">
-          <img src="https://image.flaticon.com/icons/svg/528/528098.svg"/>
+          <img src="https://image.flaticon.com/icons/svg/528/528098.svg" className="imgp"/>
         <p className="Fecha">1998</p>
       </div>
       

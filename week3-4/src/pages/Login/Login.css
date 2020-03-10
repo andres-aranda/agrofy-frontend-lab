@@ -1,0 +1,11 @@
+.contenedorLogin{
+    display: flex;
+    flex-direction: column;
+}
+.txtLog{
+    font-size: 400%;
+    margin: 30px;
+}
+.formu{
+    align-self: center;
+}

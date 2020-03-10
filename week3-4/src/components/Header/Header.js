@@ -3,15 +3,25 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+let mov="";
+    const checkHeader = () => {
+        console.log("se movio");
+        let position = Math.round(window.scrollY);
+        position> 81? mov = "position: fixed;":mov="";
+    }
+    window.addEventListener('scroll',checkHeader)
     const [showMenu, setShowMenu] = useState(false);
-
     const getMenuItems = () => <ul>
         <Link to="/"><li>Home</li></Link>
         <Link to="/pokedex"><li>Pokedex</li></Link>
         <Link to="/mifavs"><li>MyFavs</li></Link>
+        <Link to="/videos"><li>Videos</li></Link>
+        <Link to="/contact"><li>Contact</li></Link>
+        <Link to="/histoty"><li>History</li></Link>
+        <Link to="/login"><li>Login</li></Link>
     </ul>;
 
-    return <header className="header">
+    return <header className="header" >
         <div className="header__logo">
           <Link to="/">
               <img className="header__logo__image" src="/pokeball.png" alt="logo" />

@@ -4,6 +4,10 @@
     margin: auto;
     justify-content: space-between;
     padding: 10px;
+    border-bottom: 1px solid;
+    border-color: gray;
+    background-color: white;
+    position: 0px;
 }
 .header a{
     color: black;
@@ -86,7 +90,6 @@ button.header__menu__mobile__icon:hover {
         display: block;
     }
 }
-
 a {
     text-decoration: none;
     color: black;

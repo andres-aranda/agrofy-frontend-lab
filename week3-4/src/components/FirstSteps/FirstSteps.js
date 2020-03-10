@@ -4,7 +4,7 @@ import './FirstSteps.css';
 const FirstSteps = () => 
     (<div className="bloqueSteps">
       <div className="centrarSteps">
-          <img src="https://image.flaticon.com/icons/svg/528/528101.svg"/>
+          <img src="https://image.flaticon.com/icons/svg/528/528101.svg" className="imgp"/>
         <p className="FechaSteps">1988</p>
       </div>
       

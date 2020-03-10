@@ -1,7 +1,8 @@
 .pokemonInfoBody img {
   border-radius: 50%;
   margin: 20px;
-  background-color: teal;
+  padding: 30px;
+  background-color: rgb(174, 238, 238);
 }
 .pokemonInfoBody {
   display: flex;
