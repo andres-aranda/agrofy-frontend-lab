@@ -21,8 +21,8 @@ let mov="";
         <Link to="/histoty"><li>History</li></Link>
         <Link to="/login"><li>Login</li></Link>
     </ul>;
-
-    return <header className={moving ? 'header moving': 'moving'} >
+//{moving ? 'header moving': 'moving'}
+    return <header className='header' >
         <div className="header__logo">
           <Link to="/">
               <img className="header__logo__image" src="/pokeball.png" alt="logo" />

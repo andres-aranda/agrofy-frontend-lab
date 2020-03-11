@@ -14,3 +14,12 @@
     font-size: 350%;
     color: darkturquoise;
 }
+.divHistory{
+margin: 0px;
+flex-direction: column;
+align-items: center;
+margin-bottom: 30px;
+background-color: white;
+display: flex;
+justify-content: center;
+}

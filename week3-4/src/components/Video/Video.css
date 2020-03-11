@@ -9,23 +9,19 @@
     justify-content: space-around; 
     background-color: darkturquoise;
 }
-.centrarVideo {
-
-    padding: 20px;
+.centrarDesc{
     display: flex;
     flex-direction: column;
-    margin: 0px;
-    align-items: flex-start;
-    border-radius: 20px;
-
+    align-items: center;
 }
+
 .textVideo{
     align-content: center; 
     text-align: center;
     font-weight: bolder;
     color: white; 
     padding: 5px; 
-    margin-bottom: 0px;
+    margin: 0px;
 }
 a{
     text-decoration: none;

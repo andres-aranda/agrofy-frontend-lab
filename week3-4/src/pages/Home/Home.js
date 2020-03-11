@@ -4,15 +4,14 @@ import Portada from '../../components/Portada/Portada.js'
 import History from '../../components/History/History'
 import Video from '../../components/Video/Video';
 import Contact from '../../components/Contact/Contact';
-/* <Portada />
- <History />
- <Video />
-  <Contact />*/
 
 const Home = () => (
 
   <div className="home page">
-
+<Portada />
+<History />
+<Video />
+<Contact />
   </div>
 );
 

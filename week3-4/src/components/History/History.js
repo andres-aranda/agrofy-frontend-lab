@@ -7,7 +7,7 @@ import Pikachu from '../Pikachu/Pikachu';
 const History = () =>{
   return (<section className="contenedorHistory">
 
-    <div style="margin: 0px; margin-bottom: 30px;background-color: white;display: flex;justify-content: center;">
+    <div className='divHistory'>
       <h2 id="History" className="history">
         Pokemon History
       </h2>
