@@ -3,7 +3,7 @@ import './Contact.css';
 import Form from '../Form/Form';
 
 const Contact =()=>(
-  <div>
+  <div id='contact'>
     <section className="contenedorContact" >
     <p id="Contact" className="ContactUs">Contact Us</p>
   <Form />

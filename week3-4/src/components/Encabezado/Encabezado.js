@@ -5,7 +5,7 @@ import Buscador from '../Buscador/Buscador';
 const Encabezado =(props)=>{
 
     return (
-        <section>
+        <section className='ash'>
             <div className="encabezado">
                 <img src="https://github.com/andres-aranda/agrofy-frontend-lab/blob/master/week1-2/assets/ash.png?raw=true" />
                 <p>Pokedex</p>

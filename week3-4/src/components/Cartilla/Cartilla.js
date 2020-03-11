@@ -5,9 +5,8 @@ import Card from '../Card/Card'
 
 
 const Cartilla = props => {
-    let pokemones= props.pokemones;
     let allsCards = [];
-    pokemones.forEach(element => {
+    props.pokemones.map(element => {
         allsCards.push(<Card pokemon={element}/>);
     });
     

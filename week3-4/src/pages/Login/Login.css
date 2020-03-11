@@ -1,11 +1,17 @@
 .contenedorLogin{
     display: flex;
     flex-direction: column;
+    padding: 91px;
 }
 .txtLog{
     font-size: 400%;
     margin: 30px;
+    font-weight: lighter;
 }
 .formu{
     align-self: center;
+    padding-top: 50px;
+}
+.log{
+    display: block;
 }

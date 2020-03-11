@@ -11,7 +11,7 @@ const Card = props => {
     <img src={props.pokemon.image}/>
     <p>{props.pokemon.name}</p>
     <Types types={props.pokemon.types}/>
-    <FavStatus flag={props.pokemon.flag} id={props.pokemon.id}/>
+    <FavStatus pokemon={props.pokemon}/>
   </div>
    </div>)
 };

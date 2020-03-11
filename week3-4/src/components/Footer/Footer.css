@@ -1,0 +1,8 @@
+.footerclass{
+    background-color: gray ;
+    margin: 0px;
+    display: flex; 
+    justify-content: center;
+    flex-direction: row; 
+
+}

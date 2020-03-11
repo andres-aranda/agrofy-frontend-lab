@@ -14,4 +14,6 @@ flex-direction: column;
 justify-content: space-between;
 padding-top: 90px;
 background-position-y: -130%;
+width: 100%;
+margin: 0px;
 }

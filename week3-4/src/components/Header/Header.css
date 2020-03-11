@@ -1,4 +1,4 @@
-.header {
+.movin {
     display: flex;
     width: 100%;
     margin: auto;
@@ -7,6 +7,22 @@
     border-bottom: 1px solid;
     border-color: gray;
     background-color: white;
+    position: fixed;
+}
+.movin a{
+    color: black;
+}
+.movin h2 {
+    margin: 0;
+    color: black;
+}
+.header {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
     position: 0px;
 }
 .header a{
@@ -33,6 +49,7 @@
 .header__menu__desktop > ul {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .header__menu__desktop > ul a:not(:last-child) {
@@ -94,3 +111,18 @@ a {
     text-decoration: none;
     color: black;
 }
+button.btnh {
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-color: #01e409;
+    padding:15px 30px;
+    color: #fff;
+    border-radius: 50px;
+    margin-left: 20px;
+  }
+  button.btnh:hover {
+    opacity: 0.8;
+  }

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
-let mov="";
+const [mov,setMov]= useState(true)
     const checkHeader = () => {
-        console.log("se movio");
+        console.log('se movio')
         let position = Math.round(window.scrollY);
-        position> 81? mov = "position: fixed;":mov="";
+        position> 1? setMov(false):setMov(true);
     }
     window.addEventListener('scroll',checkHeader)
 
@@ -19,10 +19,10 @@ let mov="";
         <Link to="/videos"><li>Videos</li></Link>
         <Link to="/contact"><li>Contact</li></Link>
         <Link to="/histoty"><li>History</li></Link>
-        <Link to="/login"><li>Login</li></Link>
+        <Link to="/login"><li><button className='btnh'>Login</button></li></Link>
     </ul>;
-//{moving ? 'header moving': 'moving'}
-    return <header className='header' >
+//
+    return <header className={mov ?'header':'movin'} >
         <div className="header__logo">
           <Link to="/">
               <img className="header__logo__image" src="/pokeball.png" alt="logo" />

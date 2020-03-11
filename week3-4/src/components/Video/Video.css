@@ -9,6 +9,9 @@
     justify-content: space-around; 
     background-color: darkturquoise;
 }
+#videos{
+    display: block;
+}
 .centrarDesc{
     display: flex;
     flex-direction: column;

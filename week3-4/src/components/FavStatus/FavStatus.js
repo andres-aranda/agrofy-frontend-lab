@@ -2,25 +2,24 @@ import React, { useState , useEffect} from 'react';
 import './FavStatus.css'
 
 const FavStatus = props => {
+    const [flag, setFlag] = useState(props.pokemon.flag);
+    let id = props.pokemon.id;
 
-    let id = props.id;
-    const [flag, setFlag] = useState(props.flag);
     const addRemove = () => {
         if (flag) {
             setFlag(false)
-
             let temp = JSON.parse(localStorage.getItem('fav'))||[];
-            let aux = temp.filter(id => id !== props.id);
+            let aux = temp.filter(poke => poke.id !== props.pokemon.id);
             localStorage.setItem('fav',JSON.stringify(aux));
         } else {
             setFlag(true);
             let temp = JSON.parse(localStorage.getItem('fav')) || [];
-            temp.push(props.id);
+            temp.push(props.pokemon);
             localStorage.setItem('fav', JSON.stringify(temp));
         }
     }
 
-return <div>{ flag ? <button className="added" id={id} onClick={addRemove} >Remove</button> :
-<button className="btn" id={id} onClick={addRemove} >Add to fav</button>}</div>
+return <div>{ flag ? <button className="added" onClick={addRemove} >Remove</button> :
+<button className="btn"  onClick={addRemove} >Add to fav</button>}</div>
 }
 export default FavStatus;

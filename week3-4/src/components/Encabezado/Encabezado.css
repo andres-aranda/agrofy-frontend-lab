@@ -1,7 +1,11 @@
 .encabezado{
     display: flex; 
     justify-content: center;
+    padding-top: 90px;
   }
+  .ash{
+  margin: 0px;
+}
   .encabezado img{
     width: 20%;
     height: 20%;
