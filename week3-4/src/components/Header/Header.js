@@ -10,6 +10,7 @@ let mov="";
         position> 81? mov = "position: fixed;":mov="";
     }
     window.addEventListener('scroll',checkHeader)
+
     const [showMenu, setShowMenu] = useState(false);
     const getMenuItems = () => <ul>
         <Link to="/"><li>Home</li></Link>
@@ -21,7 +22,7 @@ let mov="";
         <Link to="/login"><li>Login</li></Link>
     </ul>;
 
-    return <header className="header" >
+    return <header className={moving ? 'header moving': 'moving'} >
         <div className="header__logo">
           <Link to="/">
               <img className="header__logo__image" src="/pokeball.png" alt="logo" />

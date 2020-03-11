@@ -4,8 +4,7 @@ import './styles/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 let pokemones = [];
-let fav = localStorage.getItem("fav") && localStorage.getItem("fav").split(",") || [];
-localStorage.setItem('fav',fav);
+let fav = JSON.parse(localStorage.getItem("fav")) || [];
 //Carga global
 const carga = () => {
     let promises = [];
@@ -19,7 +18,7 @@ const carga = () => {
             image: myJson.sprites.front_default,
             name: myJson.name,
             types: myJson.types,
-            flag: fav && fav.length && fav.find(item => item == myJson.id)
+            flag: fav && fav.length && fav.find(item => item == myJson.id)?true:false
         }
         ));
         render();
