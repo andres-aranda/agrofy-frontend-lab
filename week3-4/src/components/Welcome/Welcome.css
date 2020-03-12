@@ -35,3 +35,7 @@ button.btn {
     color: #fff;
     text-decoration: none;
   }
+  @media only screen and (max-width: 768px)  {
+    .contenedorWelcome{ margin-right: 0px;
+  align-self:center;}
+  }

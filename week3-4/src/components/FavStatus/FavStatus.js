@@ -11,6 +11,7 @@ const FavStatus = props => {
             let temp = JSON.parse(localStorage.getItem('fav'))||[];
             let aux = temp.filter(poke => poke.id !== props.pokemon.id);
             localStorage.setItem('fav',JSON.stringify(aux));
+            if(props.fav){props.fav()};
         } else {
             setFlag(true);
             let temp = JSON.parse(localStorage.getItem('fav')) || [];

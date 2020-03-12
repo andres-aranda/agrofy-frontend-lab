@@ -3,8 +3,7 @@ import './Footer.css';
 
 const Footer =()=>(
     <footer className='footerclass'>
-    <p>Made with love by </p><p style={{fontFamily:'cursive'}}>. Andyy Aranda</p>
-    
+    <p>Made with love by </p><p style={{fontFamily:'cursive'}}>. Andyy Aranda</p>  
   </footer>
 )
 

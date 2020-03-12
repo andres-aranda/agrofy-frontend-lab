@@ -7,7 +7,7 @@ import Card from '../Card/Card'
 const Cartilla = props => {
     let allsCards = [];
     props.pokemones.map(element => {
-        allsCards.push(<Card pokemon={element}/>);
+        allsCards.push(<Card pokemon={element} fav={props.fav || null}/>);
     });
     
 

@@ -16,9 +16,9 @@ const [mov,setMov]= useState(true)
         <Link to="/"><li>Home</li></Link>
         <Link to="/pokedex"><li>Pokedex</li></Link>
         <Link to="/mifavs"><li>MyFavs</li></Link>
-        <Link to="/#videos"><li>Videos</li></Link>
-        <Link to="/#contact"><li>Contact</li></Link>
-        <Link to="/#Histoty"><li>History</li></Link>
+        <a href="/#videos"><li>Videos</li></a>
+        <a href="/#contact"><li>Contact</li></a>
+        <a href="/#History"><li>History</li></a>
         <Link to="/login"><li><button className='btnh'>Login</button></li></Link>
     </ul>;
 //
