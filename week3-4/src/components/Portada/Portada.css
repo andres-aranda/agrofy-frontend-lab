@@ -17,3 +17,8 @@ background-position-y: -130%;
 width: 100%;
 margin: 0px;
 }
+@media (max-width: 768px) {
+  .portadaHome{
+    background-image: none;
+  }
+}

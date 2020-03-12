@@ -14,7 +14,9 @@ const FavStatus = props => {
         } else {
             setFlag(true);
             let temp = JSON.parse(localStorage.getItem('fav')) || [];
-            temp.push(props.pokemon);
+            let aux = props.pokemon;
+            aux.flag=true;
+            temp.push(aux);
             localStorage.setItem('fav', JSON.stringify(temp));
         }
     }

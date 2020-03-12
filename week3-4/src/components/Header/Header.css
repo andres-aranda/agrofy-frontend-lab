@@ -92,6 +92,9 @@ button.header__menu__mobile__icon:hover {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
 }
 
 .header__menu__mobile__items > ul li {
@@ -99,14 +102,7 @@ button.header__menu__mobile__icon:hover {
     width: 100%;
 }
 
-@media only screen and (max-width: 768px)  {
-    .header__menu__desktop {
-        display: none;
-    }
-    .header__menu__mobile {
-        display: block;
-    }
-}
+
 a {
     text-decoration: none;
     color: black;
@@ -126,3 +122,14 @@ button.btnh {
   button.btnh:hover {
     opacity: 0.8;
   }
+  @media only screen and (max-width: 768px)  {
+    .header__menu__desktop {
+        display: none;
+    }
+    .header__menu__mobile {
+        display: block;
+    }
+    button.btnh {
+        margin-left: 0px;
+    }
+}

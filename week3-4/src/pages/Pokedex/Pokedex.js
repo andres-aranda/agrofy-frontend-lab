@@ -32,16 +32,24 @@ const Pokedex = () => {
       setPokemones(aux)
       setCoincide(pokemones)
     }).catch(err => console.log('No funca ' + err));
-  
+
   };
 
   const [pokemones, setPokemones] = useState([])
-  
-useEffect(() => {carga()}, [])
-let favs = JSON.parse(localStorage.getItem('fav'))||[];
+
+  useEffect(() => { carga() }, [])
+  let favs = JSON.parse(localStorage.getItem('fav')) || [];
   const [coincide, setCoincide] = useState(pokemones);
-  
-  useEffect(() => {setCoincide(pokemones)}, [pokemones])
+  useEffect(() => {
+    setCoincide(pokemones)
+    if (favs.length) {
+      pokemones.map(poke => {
+        for (let i = 0; i < favs.length; i++) {
+         if (poke.id == favs[i].id) poke.flag = true ;
+        }
+      })
+    }
+  }, [pokemones])
   const filter = (text) => {
     text.length ?
       setCoincide(pokemones.filter(poke => poke.name.includes(text)))

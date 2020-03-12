@@ -6,7 +6,7 @@ import Welcome from '../Welcome/Welcome'
 const Portada = () =>(
 <div className="contenedorPortada">
 <section className="portadaHome">
-  <Welcome />
+  <div id='w'><Welcome /></div>
   <div className="ola">
       <svg viewBox="0 0 500 150" preserveAspectRatio="none"
       style={{height: '100%', width: '100%'}}>

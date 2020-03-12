@@ -5,7 +5,6 @@ import Footer from '../../components/Footer/Footer';
 
 const MyFavs = (props) => {
 let localPoke = JSON.parse(localStorage.getItem('fav'))||[];
-
   return(
   <div className='bloque'>
  <section className="portada" >  

@@ -7,7 +7,7 @@ const Myfavs = lazy(() => import('./pages/MyFavs/MyFavs'));
 const Home = lazy(() => import('./pages/Home/Home'));
 const Pokedex = lazy(() => import('./pages/Pokedex/Pokedex'));
 const Login = lazy(()=>import('./pages/Login/Login'));
-
+const Contact = lazy(()=>import('./components/Contact/Contact'));
 let pokemones = [];
 //let fav = JSON.parse(localStorage.getItem("fav")) || [];
 //Lamada a la API
@@ -22,9 +22,9 @@ const App = () => {
           <Route exact path="/" component={Home} />}/>
           <Route exact path="/pokedex" component={Pokedex} />
           <Route exact path="/mifavs" component={Myfavs} />
-          <Route exact path="/history"/>
-          <Route exact path="/contact"/>
-          <Route exact path="/videos"/>
+          <Route exact path="/#HistoryHistory"/>
+          <Route exact path="/#contact" component={Contact} />
+          <Route exact path="/#videos"/>
           <Route exact path="/login" component={Login} />}/>
         </Switch>
       </Suspense>
