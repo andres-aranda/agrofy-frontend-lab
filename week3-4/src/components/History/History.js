@@ -7,8 +7,8 @@ import Pikachu from '../Pikachu/Pikachu';
 const History = () =>{
   return (<section className="contenedorHistory">
 
-    <div className='divHistory'>
-      <h2 id="History" className="history">
+    <div className='divHistory'id="History">
+      <h2  className="history">
         Pokemon History
       </h2>
       <FirstSteps />
