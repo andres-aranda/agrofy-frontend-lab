@@ -39,3 +39,10 @@
     font-weight:bolder; 
     font-size: 150%;
 }
+@media only screen and (max-width: 768px)  {
+    .bloquePika{flex-direction: column;}
+    .Pika{margin-top: 0px;
+
+    }
+    
+}

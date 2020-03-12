@@ -5,7 +5,7 @@ const Picachu = () =>
     (<div className="bloquePika">
       <div className="centrarPika">
           <img src="https://image.flaticon.com/icons/svg/528/528098.svg" className="imgp"/>
-        <p className="FechaPika">1998</p>
+        <p className="fechaPika">1998</p>
       </div>
       
       <div className="centrarPika">

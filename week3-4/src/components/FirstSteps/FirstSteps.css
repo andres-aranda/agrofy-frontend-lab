@@ -39,3 +39,10 @@
     font-weight:bolder; 
     font-size: 150%;
 }
+@media only screen and (max-width: 768px)  {
+    .bloqueSteps{flex-direction: column;}
+    .steps{margin-top: 0px;
+
+    }
+    
+}
